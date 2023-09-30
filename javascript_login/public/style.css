@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: bording-box;
+  font-family: 'poppins', sans-serif;
+
+}
+body{
+    min-height: 100vh;
+    background: linear-gradient(to left, #5d7b6f, #a4c3a2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container{
+    position:  relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: irem;
+}
+
+.form-box{
+    
+    background: #fff;
+    box-shadow: 0 5px 25px rgb(0 0 0 / 15%);
+    width: 350px;
+    padding: 50px 40px ;
+    border-radius: 10px;
+    overflow:  hidden;
+}
+.form-box h2{
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.form-box .field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 25px;
+} 
+.form-box .field.active{
+    border-bottom: 2px solid #5d7b6f;
+    transition:  0.3s ease;
+}
+.form-box .field i{
+    color: #828da0;
+    font-size: 1.3em;
+    margin-right: 10px;
+    padding-bottom: 5px;
+}
+.form-box .field.active i{
+    color:#5d7b6f;
+    transition: 0.3 ease;
+}
+.form-box .field input{
+    width: 100%;
+    padding-bottom: 5px;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 1em;
+}
+::placeholder{
+    color: #828da0;
+    font-size: 0.85em;
+}
+.eye-btn{
+    
+    cursor: pointer;
+}
+.eye-btn i:hover{
+    color: #5d7b6f;
+    transition: 0.3 ease ;
+}
+.ceye-btn{
+    
+    cursor: pointer;
+}
+.ceye-btn i:hover{
+    color: #5d7b6f;
+    transition: 0.3 ease ;
+}
+.forgot-link{
+    text-align: right;
+    transform: translateY(-10px);
+}
+.forgot-link a{
+    color: #5d7b6f;
+    font-size: 0.8em;
+    text-decoration: none;
+    font-weight: 500;
+}
+.submit-btn{
+    width: 120px;
+    padding: 10px 30px;
+    background: linear-gradient(to right, #a4c3a2,#5d7b6f );
+    color: #fff;
+    font-size: 0.85em;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 5px;
+
+}
+.login-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-options .text{
+    color: #5d7b6f;
+    font-size: 0.65em;
+    margin: 25px 0;
+}
+.other-logins{
+    display: flex;
+}
+
+.other-logins a{
+    border: 1px solid #ccc;
+    padding: 11px 32px;
+    border-radius: 12px;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    transition: border 0.3s ease;
+}
+.other-logins a:hover{
+    border: 1px solid #5d7b6f;
+}
+
+
+.other-logins a img{
+    width: 20px;
+}
+.imgBox img{
+    width: 270px;
+}
+.sliding-link{
+    display: flex;
+    font-size: 0.8em;
+    margin: bottom 25px; ;
+}
+.sliding-link a{
+    color: #4f8d74;
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-left: 5px;
+    cursor:pointer;
+    
+}
+.sign-in-imgBox{
+    
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 5px 25px rgba(189, 32, 32, 0.15);
+    height: 400px;
+    padding: 15px 35 px;
+    border-radius: 0 10px 10px 0;
+}
+.sign-up-imgBox{
+    
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 5px 25px rgba(189, 32, 32, 0.15);
+    height: 400px;
+    padding: 15px 35 px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+
+/*
+.sign-in-imgBox{
+    border-radius: 0 5px 5px 0;
+}
+.sign-up-imgBox{
+    border-radius: 5px 0 0 5px;
+}
+
+.sign-in-form.hide .sign-in-box{
+    transform:  translateX(100%);
+    visibility: hidden;
+}
+.sign-in-form.hide .sign-in-imgBox{
+    transform:  translateX(-100%);
+    visibility: hidden;
+}
+.sign-up-form .sign-up-imgBox {
+    transform: translateX(100%);
+    visibility: hidden;
+}
+.sign-up-form .sign-up-box{
+    transform: translateX(-100%);
+    visibility: hidden;
+}
+*/
+
+
