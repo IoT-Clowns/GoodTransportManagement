@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <link rel="stylesheet" href="../css/animate.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/style1.css"/>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <!-- Font Google -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
@@ -15,10 +15,9 @@
   <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://kit.fontawesome.com/12db475d55.js" crossorigin="anonymous"></script>
-  
+  <script src="https://kit.fontawesome.com/12db475d55.js" crossorigin="anonymous">
+  </script>
 </head>
-
 <body>
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg">
@@ -36,7 +35,7 @@
     </div>
   </div>
 </nav>
-<!-- End Navbar --> 
+<!-- End Navbar -->
 <!-------Banner Start------->
 <section class="banner" data-scroll-index='0'>
   <div class="banner-overlay">
@@ -53,50 +52,42 @@
       </div>
     </div>
   </div>
-  <span class="svg-wave"> <img class="svg-hero" src="../images/applight-wave.svg"> </span> </section>
-
-<!-------Banner End-------> 
-
-
-
-
-
+  <span class="svg-wave"> <img class="svg-hero" src="../images/applight-wave.svg"> </span>
+</section>
+<!-------Banner End------->
 <!-------Features Start------->
 <section class="feature section-padding" data-scroll-index='2' style="background: #5d7b6f;
   background: linear-gradient(to left, #5d7b6f, #a4c3a2);">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="search-box">
-          <input id="date_searching" class="search-txt" type="text" name="" placeholder="Type to search">
-          <a class="search-btn" id="search_button"  >
-              <i class="fa-solid fa-magnifying-glass" ></i>
-          </a>
-        </div> 
         <div class="sectioner-header text-center">
           <h3 style="color:#fff">Analyze</h3>
           <span class="line"></span>
         </div>
       </div>
+      <div class="input-group date">
+        <input type="text" class="form-control" id="datepicker" placeholder="Select a date">
+        <div class="input-group-append">
+          <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+        </div>
+      </div>
     </div>
   </div>
   <div class="chartCon">
-   <div class="chart">
-              <canvas id="myChart"></canvas>
-            </div>
-            <div class="chart">
-               <canvas id="myChart2"></canvas>
-            </div>
-            <div class="chart">
-              <canvas id="myChart1"></canvas>
-            </div>
+    <div class="chart">
+      <canvas id="myChart"></canvas>
     </div>
-            
+    <div class="chart">
+      <canvas id="myChart2"></canvas>
+    </div>
+    <div class="chart">
+      <canvas id="myChart1"></canvas>
+    </div>
+  </div>
+ 
 </section>
-<!-------Features End-------> 
-
-
-
+<!-------Features End------->
 <!-------Download End------->
 <section class="download section-padding">
   <div class="container">
@@ -119,96 +110,76 @@
     </div>
   </div>
 </section>
-
 <!-------Download End------->
-
-<footer class="footer-copy">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-        <p></p>
-      </div>
-    </div>
-  </div>
-</footer>
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> 
-<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> 
-
-<!-- scrollIt js --> 
-<script src="../js/scrollIt.min.js"></script> 
-<script src="../js/wow.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<!-- Include Bootstrap Datepicker CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+<!-- Include Bootstrap Datepicker JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+<!-- scrollIt js -->
+<script src="../js/scrollIt.min.js"></script>
+<script src="../js/wow.min.js"></script>
 <script src="../js/chart.js"></script>
 <script>
-	wow = new WOW();
-	wow.init();
-$(document).ready(function(e) {
-
-	$('#video-icon').on('click',function(e){
-	e.preventDefault();
-	$('.video-popup').css('display','flex');
-	$('.iframe-src').slideDown();
-	});
-	$('.video-popup').on('click',function(e){
-	var $target = e.target.nodeName;
-	var video_src = $(this).find('iframe').attr('src');
-	if($target != 'IFRAME'){
-	$('.video-popup').fadeOut();
-	$('.iframe-src').slideUp();
-	$('.video-popup iframe').attr('src'," ");
-	$('.video-popup iframe').attr('src',video_src);
-	}
-	});
-
-	$('.slider').bxSlider({
-	pager: false
-	});
-});
-    
-$(window).on("scroll",function () {
-
-	var bodyScroll = $(window).scrollTop(),
-	navbar = $(".navbar");
-	
-	if(bodyScroll > 50){
-	$('.navbar-logo img').attr('src','../images/logo-black.png');
-	navbar.addClass("nav-scroll");
-
-}else{
-	$('.navbar-logo img').attr('src','../images/logo.png');
-	navbar.removeClass("nav-scroll");
-}
-
-});
-$(window).on("load",function (){
-	var bodyScroll = $(window).scrollTop(),
-	navbar = $(".navbar");
-	
-	if(bodyScroll > 50){
-	$('.navbar-logo img').attr('src','../images/logo-black.png');
-	navbar.addClass("nav-scroll");
-	}else{
-	$('.navbar-logo img').attr('src','../images/logo-white.png');
-	navbar.removeClass("nav-scroll");
-	}
-
-	$.scrollIt({
-	
-	easing: 'swing',      // the easing function for animation
-	scrollTime: 900,       // how long (in ms) the animation takes
-	activeClass: 'active', // class given to the active nav element
-	onPageChange: null,    // function(pageIndex) that is called when page is changed
-	topOffset: -63
-	});
-});
-
+  wow = new WOW();
+  wow.init();
+  $(document).ready(function(e) {
+    $('#video-icon').on('click',function(e){
+      e.preventDefault();
+      $('.video-popup').css('display','flex');
+      $('.iframe-src').slideDown();
+    });
+    $('.video-popup').on('click',function(e){
+      var $target = e.target.nodeName;
+      var video_src = $(this).find('iframe').attr('src');
+      if($target != 'IFRAME'){
+        $('.video-popup').fadeOut();
+        $('.iframe-src').slideUp();
+        $('.video-popup iframe').attr('src'," ");
+        $('.video-popup iframe').attr('src',video_src);
+      }
+    });
+    $('.slider').bxSlider({
+      pager: false
+    });
+  });
+  $(window).on("scroll",function () {
+    var bodyScroll = $(window).scrollTop(),
+      navbar = $(".navbar");
+    if(bodyScroll > 50){
+      $('.navbar-logo img').attr('src','../images/logo-black.png');
+      navbar.addClass("nav-scroll");
+    } else {
+      $('.navbar-logo img').attr('src','../images/logo.png');
+      navbar.removeClass("nav-scroll");
+    }
+  });
+  $(window).on("load",function (){
+    var bodyScroll = $(window).scrollTop(),
+      navbar = $(".navbar");
+    if(bodyScroll > 50){
+      $('.navbar-logo img').attr('src','../images/logo-black.png');
+      navbar.addClass("nav-scroll");
+    } else {
+      $('.navbar-logo img').attr('src','../images/logo-white.png');
+      navbar.removeClass("nav-scroll");
+    }
+    $.scrollIt({
+      easing: 'swing',
+      scrollTime: 900,
+      activeClass: 'active',
+      onPageChange: null,
+      topOffset: -63
+    });
+  });
 </script>
-
-
-
-
-
+<script>
+  $(document).ready(function () {
+    // Initialize the date picker
+    $('#datepicker').datepicker();
+  });
+</script>
 </body>
 </html>

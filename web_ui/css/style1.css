@@ -28,7 +28,36 @@ h6 {
 .black {
 	color:#000000;
 }
+.input-group.date{
+	width: 15%;
+	
+}
+.datepicker {
+    width: 15%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 90px;
+    font-size: 16px;
+    margin: 0 auto; /* Center the date picker */
+  }
 
+  .input-group-text {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #333;
+
+  }
+
+  .input-group-text i {
+    font-size: 16px;
+  }
+
+  #datepicker.form-control{
+
+  }
+
+
+</style>
 .toggle {
   --width: 50px;
   --height: calc(var(--width) / 2);
