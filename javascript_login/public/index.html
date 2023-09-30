@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Response sliding login & sign up</title>
+        <link rel ="stylesheet" href="style.css">
+<link rel ="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    </head>
+<body>
+    
+    <div   class="form-container sign-in-form">
+        <div class="form-box sign-in-box">
+            <h2>Login</h2>
+            
+            <form action="/login" method="post">
+                <div class="field">
+                    <i class="uil uil-at"></i>
+                    <input type="email" name="email" placeholder="Email ID" required>
+                </div>
+                <div class="field">
+                    <i class="uil uil-lock-alt"></i>
+                    <input class="password-input" name="password" type="password" placeholder="Password" required>
+                    <div class="eye-btn"><i class ="uil uil-eye-slash"></i></div>
+                </div>
+                <div class ="forgot-link">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <input class="submit-btn" type="submit" value="Login">
+            </form>
+            <div class="login-options">
+                <p class="text">You can login with...</p>
+                <div class="other-logins">
+                    <a href=""><img src="images/google.png" alt=""></a>
+                    <a href=""><img src="images/facebook.png" alt=""></a>
+                    <a href=""><img src="images/apple.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="imgBox sign-in-imgBox">
+                <div class="sliding-link">
+                    <p>Don't have an account? </p>
+                    <a href="index2.html" class="sign-up-btn">Sign up</a>
+                </div>
+                <img src="images/signin-img.png" alt="">
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="btn.js"></script>
+    
+
+</body>
+</html>

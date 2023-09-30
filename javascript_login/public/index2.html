@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Response sliding login & sign up</title>
+        <link rel ="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    </head>
+    <body>
+        <div   class="form-container sign-up-form">
+        <div>
+            <div class="imgBox sign-up-imgBox">
+                <div class="sliding-link">
+                    <p>Already have an account? </p>
+                    <a href="index.html" class="sign-in-btn">Sign in</a>
+                </div>
+                <img src="images/signup-img.png" alt="">
+            </div>
+        </div>
+        <div class="form-box sign-up-box">
+            <h2>Sign up </h2>
+            <div class="login-options">
+                <div class="other-logins">
+                    <a href=""><img src="images/google.png" alt=""></a>
+                    <a href=""><img src="images/facebook.png" alt=""></a>
+                    <a href=""><img src="images/apple.png" alt=""></a>
+                </div>
+                <p class="text">You can sign up with...</p>
+            </div>
+            <form action="/signup" method="post">
+                <div class="field">
+                    <i class="uil uil-at"></i>
+                    <input name="email" type="email" placeholder="Email ID" required>
+                </div>
+                <div class="field">
+                    <i class="uil uil-phone"></i>
+                    <input name="phone" type="phone" placeholder="Phone" required>
+                </div>
+                <div class="field">
+                    <i class="uil uil-user"></i>
+                    <input name="name" type="text" placeholder="Full name" required>
+                </div>
+                <div class="field">
+                    <i class="uil uil-lock-alt"></i>
+                    <input class="password-input" name ="password" type="password" placeholder="Password" required>
+                    <div class="eye-btn"><i class ="uil uil-eye-slash"></i></div>
+                </div>
+                <div class="field">
+                    <i class="uil uil-lock-access"></i>
+                    <input class="cpassword-input" name="cpassword" type="password" placeholder="Confirm password" required>
+                    <div class="ceye-btn"><i class ="uil uil-eye-slash"></i></div>
+                </div>
+                <input class="submit-btn" type="submit" value="Sign up">
+            </form>
+           
+            <script src="btn.js"></script>
+    </body>
+</html>
