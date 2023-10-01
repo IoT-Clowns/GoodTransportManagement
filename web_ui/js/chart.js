@@ -100,9 +100,9 @@ dbRef.on("value", function(snapshot) {
     }
 });
 
-document.getElementById("search_button").addEventListener("click", function() {
+document.getElementById("datepicker").addEventListener("click", function() {
     var base_url = "https://ap-southeast-1.aws.data.mongodb-api.com/app/application-0-xtvas/endpoint/web_browser/findOne"
-    var date = document.getElementById("date_searching").value;
+    var date = document.getElementById("datepicker").value;
     var xhr = new XMLHttpRequest();
     // Create an object with the data you want to send
     var dataToSend = {
@@ -172,5 +172,8 @@ dbRef2.on("value", function(snapshot) {
         myChart2.update();
     }
 });
+
+
+//
 
 

@@ -14,8 +14,41 @@ body{
     justify-content: center;
     align-items: center;
 }
+/* style.css */
+
+/* CSS cho thanh điều hướng */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to left, #5d7b6f, #a4c3a2)5d7b6f;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-left: 120px;
+}
+nav a{
+    text-decoration: none;
+    color: #5d7b6f;
+    font-weight: bold;
+    
+}
+h1{
+    font-size: 45px;
+}
+
+
+/* Các kiểu khác cho trang web */
+
 .form-container{
-    position:  relative;
+    position:  absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,32 +217,3 @@ body{
     padding: 15px 35 px;
     border-radius: 10px 0px 0px 10px;
 }
-
-
-/*
-.sign-in-imgBox{
-    border-radius: 0 5px 5px 0;
-}
-.sign-up-imgBox{
-    border-radius: 5px 0 0 5px;
-}
-
-.sign-in-form.hide .sign-in-box{
-    transform:  translateX(100%);
-    visibility: hidden;
-}
-.sign-in-form.hide .sign-in-imgBox{
-    transform:  translateX(-100%);
-    visibility: hidden;
-}
-.sign-up-form .sign-up-imgBox {
-    transform: translateX(100%);
-    visibility: hidden;
-}
-.sign-up-form .sign-up-box{
-    transform: translateX(-100%);
-    visibility: hidden;
-}
-*/
-
-
