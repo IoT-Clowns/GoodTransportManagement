@@ -23,6 +23,7 @@ function login(){
         {
             console.log(user_);
             document.location = "html/home.html";
+            //location.assign("html/home.html");
         }
         else
         {

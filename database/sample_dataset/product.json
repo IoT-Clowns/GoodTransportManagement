@@ -1,0 +1,87 @@
+[
+  {
+    "_name": "Grain",
+    "_type": "Bulk commodity",
+    "_description": "A type of cereal grain that is used to make flour, bread, and other food products."
+  },
+  {
+    "_name": "Coal",
+    "_type": "Bulk commodity",
+    "_description": "A type of fossil fuel that is used to generate electricity."
+  },
+  {
+    "_name": "Ore",
+    "_type": "Bulk commodity",
+    "_description": "A type of rock that contains valuable minerals, such as iron, copper, and gold."
+  },
+  {
+    "_name": "Machinery",
+    "_type": "Breakbulk cargo",
+    "_description": "Large equipment that is used to manufacture goods or perform other tasks."
+  },
+  {
+    "_name": "Vehicles",
+    "_type": "Breakbulk cargo",
+    "_description": "Cars, trucks, and other vehicles."
+  },
+  {
+    "_name": "Furniture",
+    "_type": "Breakbulk cargo",
+    "_description": "Items of furniture, such as tables, chairs, and sofas."
+  },
+  {
+    "_name": "Shipping containers",
+    "_type": "Containerized cargo",
+    "_description": "Standardized metal boxes that are used to transport goods."
+  },
+  {
+    "_name": "Petroleum",
+    "_type": "Liquid bulk cargo",
+    "_description": "A type of fossil fuel that is used to make gasoline, diesel fuel, and other products."
+  },
+  {
+    "_name": "Chemicals",
+    "_type": "Liquid bulk cargo",
+    "_description": "Substances that are used to make other products, such as plastics, fertilizers, and pharmaceuticals."
+  },
+  {
+    "_name": "Edible oils",
+    "_type": "Liquid bulk cargo",
+    "_description": "Oils that are used to cook food or make other products, such as margarine and mayonnaise."
+  },
+  {
+    "_name": "Liquefied natural gas (LNG)",
+    "_type": "Liquefied natural gas (LNG)",
+    "_description": "Natural gas that has been cooled to a liquid state so that it can be transported in ships."
+  },
+  {
+    "_name": "Cars",
+    "_type": "Vehicles",
+    "_description": "Four-wheeled vehicles that are used to transport people and goods."
+  },
+  {
+    "_name": "Trucks",
+    "_type": "Vehicles",
+    "_description": "Large vehicles that are used to transport goods."
+  },
+  {
+    "_name": "Cows",
+    "_type": "Livestock",
+    "_description": "Large animals that are raised for their meat, milk, or hides."
+  },
+  {
+    "_name": "Sheep",
+    "_type": "Livestock",
+    "_description": "Animals that are raised for their wool and meat."
+  },
+  {
+    "_name": "Fruits",
+    "_type": "Perishable goods",
+    "_description": "Sweet and fleshy products of a tree or other plant that contain seed and can be eaten as food."
+  },
+  {
+    "_name": "Vegetables",
+    "_type": "Perishable goods",
+    "_description": "Plants or parts of plants that are used as food."
+  }
+]
