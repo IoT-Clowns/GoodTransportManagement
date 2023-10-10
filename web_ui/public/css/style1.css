@@ -89,18 +89,18 @@ h6 {
   }
   .progressbar li.active:after,
   .progressbar li.complete:after {
-	background: #3aac5d;
+	background: #5d7b6f;
   }
   
   .progressbar li.active:before,
   .progressbar li.complete:before {
-	background: #3aac5d;
-	border-color: #3aac5d;
+	background: #5d7b6f;
+	border-color: #5d7b6f;
 	color: #fff;
   }
   
   .progressbar li.active {
-	color: #3aac5d;
+	color: #5d7b6f;
 	font-weight: 700;
   }
   
