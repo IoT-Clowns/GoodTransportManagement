@@ -2,7 +2,7 @@
 //---------- Aggregation pipeline for pie chart ----------
 db.station.aggregate([
     {
-        $match: {timestamp: '01/10/2023'},
+        $match: {timestamp: '03/10/2023'},
     },
     {
         $unwind: '$_product'
@@ -50,3 +50,71 @@ db.order.aggregate([
     }
   ]);  
 //---------- End Aggregation pipeline for bar chart ----------
+//---------- Aggregation pipeline for scatter chart ----------
+db.shipment.aggregate([
+    {
+        $addFields: {
+            _start: {
+                $dateFromString: {
+                    dateString: {
+                        $concat: [
+                            { $dateToString: { format: "%Y-%m-%d", date: new Date() } },
+                            "T",
+                            "$_time._start",
+                            ":00.000Z"
+                        ]
+                    },
+                    format: "%Y-%m-%dT%H:%M:%S.%LZ"
+                }
+            },
+            _end: {
+                $dateFromString: {
+                    dateString: {
+                        $concat: [
+                            { $dateToString: { format: "%Y-%m-%d", date: new Date() } },
+                            "T",
+                            "$_time._end",
+                            ":00.000Z"
+                        ]
+                    },
+                    format: "%Y-%m-%dT%H:%M:%S.%LZ"
+                }
+            }
+        }
+    },
+    {
+        $project: {
+            _from: 1,
+            _to: 1,
+            totalMinutes: {
+                $divide: [
+                    {
+                        $subtract: ["$_end", "$_start"]
+                    },
+                    1000 * 60 // Convert milliseconds to minutes
+                ]
+            }
+        }
+    },
+    {
+        $group: {
+            _id: {
+                from: "$_from._station",
+                to: "$_to._station"
+            },
+            totalMinutes: {
+                $sum: "$totalMinutes"
+            }
+        }
+    },
+    {
+        $project: {
+            _id: 0,
+            from: "$_id.from",
+            to: "$_id.to",
+            totalMinutes: 1
+        }
+    }
+]);
+
+  

@@ -115,6 +115,7 @@ function fetchData(date, chartType) {
                     var data = xhr.response[0]["products"];
                 else
                     var data = xhr.response;
+                console.log(data);
                 var labels = Object.keys(data);
                 var values = Object.values(data).map(item => {
                     if (chartType === "pie") {
