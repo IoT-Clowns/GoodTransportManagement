@@ -65,10 +65,26 @@ search_text.addEventListener("change", function () {
         if (xhr.status === 200) 
         {
             var data = xhr.response;
-            alert(data);
-            console.log(data);
-            const element = document.getElementById('search-result');
-            element.style.display = 'block'; // Hide the element
+            const element = document.getElementById('product-search-result');
+            if(data == null)
+            {
+                element.style.display = 'none';
+            }
+            else
+            {
+                console.log(data);
+                document.getElementById("product-name").textContent = "Product Name: " + data[0]["_name"];
+                document.getElementById("product-id").textContent = "Product Id: " + data[0]["_id"];
+                document.getElementById("product-type").textContent = "Product type: " + data[0]["_type"];
+                document.getElementById("product-description").textContent = "Description: " + data[0]["_description"];
+                document.getElementById("avail-station").textContent = "";
+                for (const station of data[0]["avail_station"]) 
+                {
+                    document.getElementById("avail-station").textContent += `Station: ${station._station} Quantity: ${station._quantity} ____  `  ;
+                }
+
+                element.style.display = 'block';    
+            }
         }
     };
 })
