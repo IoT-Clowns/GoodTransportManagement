@@ -15,7 +15,7 @@
   <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://kit.fontawesome.com/12db475d55.js" crossorigin="anonymous"></script>
+  
 </head>
 <body>
 <!-- onload="if (document.referrer == '') self.location= 'https:\/\/iot-lab-59822.web.app/' ;" -->
@@ -62,21 +62,46 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="search-box">
-            <input id="product_searching" class="search-txt" type="text" name="" placeholder="Type to search">
-            <a class="search-btn" id="search_button"  >
-                <i class="fa-solid fa-magnifying-glass" ></i>
-            </a>
-          </div> 
         <div class="sectioner-header text-center">
           <h3>Control</h3>
           <span class="line"></span>
           <p></p>
         </div>
+        <div class="search-box">
+            <input id="product_searching" class="search-txt" type="text" name="" placeholder="Type to search">
+            <a class="search-btn" id="search_button"  >
+                <i class="fa-solid fa-magnifying-glass" ></i>
+            </a>
+        </div> 
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="contact-info white" id="search-result" style="display: none;">
+            <div class="contact-item media"> <i class="fa fa-map-marker-alt media-left media-right-margin"></i>
+              <div class="media-body">
+                <p class="text-uppercase">Route</p>
+                <p class="text-uppercase">1 Vo Van Ngan, Linh Chieu, Thu Duc</p>
+              </div>
+            </div>
+            <div class="contact-item media"> <i class="fa fa-envelope media-left media-right-margin"></i>
+              <div class="media-body">
+                <p class="text-uppercase">Product</p>
+                <p class="text-uppercase"><a class="text-white" href="mailto:abcdefg@gmail.com">dinh.nhat2501@gmail.com</a> </p>
+              </div>
+            </div>
+            <div class="contact-item media"> <i class="fa fa-clock media-left media-right-margin"></i>
+              <div class="media-body">
+                <p class="text-uppercase">Time</p>
+                <p class="text-uppercase">24/7</p>
+              </div>
+            </div>
+        </div>
         <div class="section-content text-center">
           <div class="row">
             <div class="col-md-4">
-              <div class="icon-box wow fadeInUp" data-wow-delay="0.2s"> <i class="fa fa-life-ring" aria-hidden="true"></i>
+              <div class="icon-box wow fadeInUp" data-wow-delay="0.2s"> 
                 <h5>Product checker</h5>
                  <label class="toggle" for="myToggle1">
                     <input class="toggle__input" name="" type="checkbox" id="myToggle1">
@@ -85,7 +110,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="icon-box wow fadeInUp" data-wow-delay="0.4s"> <i class="fa fa-mobile" aria-hidden="true"></i>
+              <div class="icon-box wow fadeInUp" data-wow-delay="0.4s"> 
                 <h5>Order checker</h5>
                 <label class="toggle" for="myToggle2">
                     <input class="toggle__input" name="" type="checkbox" id="myToggle2">
@@ -94,7 +119,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="icon-box wow fadeInUp" data-wow-delay="0.6s"> <i class="fa fa-bolt" aria-hidden="true"></i>
+              <div class="icon-box wow fadeInUp" data-wow-delay="0.6s"> 
                 <h5>Power</h5>
                 <label class="toggle" for="myToggle3">
                     <input class="toggle__input" name="" type="checkbox" id="myToggle3">
@@ -128,19 +153,18 @@
           <div class="section-content">
             <div class="row" >
               <div class="col-sm-12 col-md-12 col-lg-8">
-                <form id="contact_form" action="">
+                <form target="#" action="https://ap-southeast-1.aws.data.mongodb-api.com/app/application-0-xtvas/endpoint/web_browser/make_order" method="POST">
                   <div class="row">
                     <div class="col">
-                      <input type="text" id="product_id" class="form-input w-100" name="full-name" placeholder="Product ID" required>
+                      <input type="text" class="form-input w-100" name="product_id" placeholder="Product ID" required>
                     </div>
                     <div class="col">
-                      <input type="text" id="product_quantity" class="form-input w-100" name="email" placeholder="Quantity" required>
+                      <input type="text" class="form-input w-100" name="quantity" placeholder="Quantity" required>
                     </div>
                   </div>
-                  <input type="text" id="from_station" class="form-input w-100" name="subject" placeholder="From">
-                  <input type="text" id="to_station" class="form-input w-100" name="subject" placeholder="To">
-                  <textarea class="form-input w-100" id="message" placeholder="Message" name="message"></textarea>
-                  <button class="btn-grad w-100 text-uppercase" id="make_order_submit" type="submit" name="button">submit</button>
+                  <input type="text" class="form-input w-100" name="from_station" placeholder="From">
+                  <input type="text" class="form-input w-100" name="to_station" placeholder="To">
+                  <button class="btn-grad w-100 text-uppercase" type="submit" name="button">submit</button>
                 </form>
               </div>
               <div class="col-sm-12 col-md-12 col-lg-4">

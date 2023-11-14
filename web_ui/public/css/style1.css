@@ -840,3 +840,19 @@ h3 {
 .footer-copy p {
 	font-size: 10px;
 }
+
+
+#make_order_submit{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #5d7b6f;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: #b0d4b8;
+    border-radius: 24px;
+    transition: 0.25s;
+}}
