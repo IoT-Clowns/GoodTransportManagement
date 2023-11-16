@@ -104,12 +104,51 @@
             </div>
           </div>
           <ul class="progressbar">
-            <li class="complete">Step 1</li>
-            <li class="active">Step 2</li>
+            <li >Step 1</li>
+            <li >Step 2</li>
             <li >Step 3</li>
             <li>Step 4</li>
             <li>Step 5</li>
           </ul>
+          
+          <button onclick="goToStep(1)">Chọn Bước 1</button>
+          <button onclick="goToStep(2)">Chọn Bước 2</button>
+          <button onclick="goToStep(3)">Chọn Bước 3</button>
+          <button onclick="goToStep(4)">Chọn Bước 4</button>
+          <button onclick="goToStep(5)">Chọn Bước 5</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  var currentStep;
+  var progressBarItems = document.querySelectorAll(".progressbar li");
+
+  // Hàm để chuyển đến một bước cụ thể
+  function goToStep(step) {
+  console.log("Button clicked for step:", step); // Log the click event
+
+  // Update the progress bar
+  for (var i = 0; i < progressBarItems.length; i++) {
+    if (i < step - 1) {
+      progressBarItems[i].classList.add("complete");
+      progressBarItems[i].classList.remove("active");
+    } else if (i === step - 1) {
+      progressBarItems[i].classList.add("active");
+      progressBarItems[i].classList.remove("complete");
+    } else {
+      progressBarItems[i].classList.remove("active", "complete");
+    }
+  }
+
+  currentStep = step;
+}
+
+
+</script>
+
       </div>
     </div>
   </div>
@@ -129,18 +168,17 @@
           <div class="section-content">
             <div class="row">
               <div class="col-sm-12 col-md-12 col-lg-8">
-                <form id="contact_form" action="">
+                <form id="contact_form" action="#" method="POST">
                   <div class="row">
                     <div class="col">
-                      <input type="text" id="your_name" class="form-input w-100" name="full-name" placeholder="Product ID" required>
+                      <input type="text" id="your_name" class="form-input w-100" name="full-name" placeholder="Product ID">
                     </div>
                     <div class="col">
-                      <input type="email" id="email" class="form-input w-100" name="email" placeholder="Quantity" required>
+                      <input type="text" id="name" class="form-input w-100" name="text" placeholder="Quantity">
                     </div>
                   </div>
                   <input type="text" id="subject" class="form-input w-100" name="subject" placeholder="Subject">
-                  <textarea class="form-input w-100" id="message" placeholder="Message" name="message"></textarea>
-                  <button class="btn-grad w-100 text-uppercase" type="submit" name="button">submit</button>
+                  <button class="btn-grad w-100 text-uppercase" type="submit" name="button">Submit</button>
                 </form>
               </div>
               <div class="col-sm-12 col-md-12 col-lg-4">
