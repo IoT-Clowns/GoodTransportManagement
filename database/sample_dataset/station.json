@@ -1,0 +1,179 @@
+[
+    {
+      "_id": { "$oid" :"651b80ad3b97828be1e00d60"},
+      "_station": "A1",
+      "_product": [
+        {
+          "_productId": { "$oid" :"651b7aa903e7a779e7522768"},
+          "_quantity": 2100
+        },
+        {
+          "_productId": { "$oid" :"651b7aa903e7a779e7522769"},
+          "_quantity": 1100
+        },
+        {
+          "_productId": { "$oid" :"651b7aa903e7a779e752276a"},
+          "_quantity": 600
+        }
+      ],
+      "timestamp": "01/10/2023"
+    },
+    {
+      "_id": { "$oid" :"651b80ad3b97828be1e00d61"},
+      "_station": "A2",
+      "_product": [
+        {
+          "_productId": { "$oid" :"651b7aa903e7a779e752276b"},
+          "_quantity": 200
+        },
+        {
+          "_productId": { "$oid" :"651b7aa903e7a779e752276c"},
+          "_quantity": 100
+        },
+        {
+          "_productId": { "$oid" :"651b7aa903e7a779e752276d"},
+          "_quantity": 50
+        }
+      ],
+      "timestamp": "01/10/2023"
+    },
+    {
+      "_id": { "$oid" :"651b80ad3b97828be1e00d62"},
+      "_station": "A3",
+      "_product": [
+        {
+          "_productId": { "$oid" :"651b7aa903e7a779e7522765"},
+          "_quantity": 10500
+        },
+        {
+          "_productId": { "$oid" :"651b7aa903e7a779e7522766"},
+          "_quantity": 5500
+        },
+        {
+          "_productId": { "$oid" :"651b7aa903e7a779e7522767"},
+          "_quantity": 3300
+        }
+      ],
+      "timestamp": "01/10/2023"
+    },
+    {
+      "_id": { "$oid" :"651b80ad3b97828be1e00d63"},
+      "_station": "A4",
+      "_product": [
+        {
+          "_productId": { "$oid" :"651b7aa903e7a779e7522770"},
+          "_quantity": 200
+        },
+        {
+          "_productId": { "$oid" :"651b7aa903e7a779e7522771"},
+          "_quantity": 100
+        },
+        {
+          "_productId": { "$oid" :"651b7aa903e7a779e7522772"},
+          "_quantity": 50
+        },
+        {
+          "_productId": { "$oid" :"651b7aa903e7a779e7522773"},
+          "_quantity": 1100
+        },
+        {
+          "_productId": { "$oid" :"651b7aa903e7a779e7522774"},
+          "_quantity": 600
+        },
+        {
+          "_productId": { "$oid" :"651b7aa903e7a779e7522773"},
+          "_quantity": 1100
+        }
+      ],
+      "timestamp": "01/10/2023"
+    },
+    {
+      "_id": { "$oid" :"651b80ad3b97828be1e00d64"},
+      "_station": "A1",
+      "_product": [
+        {
+          "_productId": { "$oid" :"651b7aa903e7a779e7522768"},
+          "_quantity": 2200
+        },
+        {
+          "_productId": { "$oid" :"651b7aa903e7a779e7522769"},
+          "_quantity": 1200
+        },
+        {
+          "_productId": { "$oid" :"651b7aa903e7a779e752276a"},
+          "_quantity": 700
+        }
+      ],
+      "timestamp": "02/10/2023"
+    },
+    {
+      "_id": { "$oid" :"651b80ad3b97828be1e00d65"},
+      "_station": "A2",
+      "_product": [
+        {
+          "_productId": { "$oid" :"651b7aa903e7a779e752276b"},
+          "_quantity": 300
+        },
+        {
+          "_productId": { "$oid" :"651b7aa903e7a779e752276c"},
+          "_quantity": 150
+        },
+        {
+          "_productId": { "$oid" :"651b7aa903e7a779e752276d"},
+          "_quantity": 60
+        }
+      ],
+      "timestamp": "02/10/2023"
+    },
+    {
+      "_id": { "$oid" :"651b80ad3b97828be1e00d66"},
+      "_station": "A3",
+      "_product": [
+        {
+          "_productId": { "$oid" :"651b7aa903e7a779e7522765"},
+          "_quantity": 11000
+        },
+        {
+          "_productId": { "$oid" :"651b7aa903e7a779e7522766"},
+          "_quantity": 6000
+        },
+        {
+          "_productId": { "$oid" :"651b7aa903e7a779e7522767"},
+          "_quantity": 3500
+        }
+      ],
+      "timestamp": "02/10/2023"
+    },
+    {
+      "_id": { "$oid" :"651b80ad3b97828be1e00d67"},
+      "_station": "A4",
+      "_product": [
+        {
+          "_productId": { "$oid" :"651b7aa903e7a779e7522770"},
+          "_quantity": 250
+        },
+        {
+          "_productId": { "$oid" :"651b7aa903e7a779e7522771"},
+          "_quantity": 120
+        },
+        {
+          "_productId": { "$oid" :"651b7aa903e7a779e7522772"},
+          "_quantity": 70
+        },
+        {
+          "_productId": { "$oid" :"651b7aa903e7a779e7522773"},
+          "_quantity": 1300
+        },
+        {
+          "_productId": { "$oid" :"651b7aa903e7a779e7522774"},
+          "_quantity": 700
+        },
+        {
+          "_productId": { "$oid" :"651b7aa903e7a779e7522773"},
+          "_quantity": 1300
+        }
+      ],
+      "timestamp": "02/10/2023"
+    }
+  ]
+  

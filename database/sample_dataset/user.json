@@ -1,0 +1,10 @@
+{
+    
+    "_name": "John",
+    "_phone": 0123456789,
+    "_email": "johndoe@me.com",
+    "_authenticated": {
+        "__user": "tung",
+        "__password": "123456"
+    }
+}
