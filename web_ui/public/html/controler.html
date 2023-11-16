@@ -128,52 +128,19 @@
               </div>
             </div>
           </div>
-          <ul class="progressbar">
-            <li >Step 1</li>
-            <li >Step 2</li>
-            <li >Step 3</li>
-            <li>Step 4</li>
-            <li>Step 5</li>
+          <ul class="progressbar" id="order-status" style="display: none;">
+            <li >Pending</li>
+            <li >Processing</li>
+            <li >Shipping</li>
+            <li>Deliverred</li>
+            <li>Finish</li>
           </ul>
           
-          <button onclick="goToStep(1)">Chọn Bước 1</button>
-          <button onclick="goToStep(2)">Chọn Bước 2</button>
-          <button onclick="goToStep(3)">Chọn Bước 3</button>
-          <button onclick="goToStep(4)">Chọn Bước 4</button>
-          <button onclick="goToStep(5)">Chọn Bước 5</button>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-<script>
-  var currentStep;
-  var progressBarItems = document.querySelectorAll(".progressbar li");
-
-  // Hàm để chuyển đến một bước cụ thể
-  function goToStep(step) {
-  console.log("Button clicked for step:", step); // Log the click event
-
-  // Update the progress bar
-  for (var i = 0; i < progressBarItems.length; i++) {
-    if (i < step - 1) {
-      progressBarItems[i].classList.add("complete");
-      progressBarItems[i].classList.remove("active");
-    } else if (i === step - 1) {
-      progressBarItems[i].classList.add("active");
-      progressBarItems[i].classList.remove("complete");
-    } else {
-      progressBarItems[i].classList.remove("active", "complete");
-    }
-  }
-
-  currentStep = step;
-}
-
-
-</script>
-
       </div>
     </div>
   </div>
