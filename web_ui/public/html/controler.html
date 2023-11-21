@@ -78,23 +78,23 @@
         <br>
         <br>
         <br>
-        <div class="contact-info white" id="search-result" style="display: none;">
+        <div class="contact-info white" id="product-search-result" style="display: none;">
             <div class="contact-item media"> <i class="fa fa-map-marker-alt media-left media-right-margin"></i>
               <div class="media-body">
-                <p class="text-uppercase">Route</p>
-                <p class="text-uppercase">1 Vo Van Ngan, Linh Chieu, Thu Duc</p>
+                <p class="text-uppercase" id="product-name">Route</p>
+                <p class="text-uppercase" id="product-id">1 Vo Van Ngan, Linh Chieu, Thu Duc</p>
               </div>
             </div>
             <div class="contact-item media"> <i class="fa fa-envelope media-left media-right-margin"></i>
               <div class="media-body">
-                <p class="text-uppercase">Product</p>
-                <p class="text-uppercase"><a class="text-white" href="mailto:abcdefg@gmail.com">dinh.nhat2501@gmail.com</a> </p>
+                <p class="text-uppercase"  id="product-type">Product</p>
+                <p class="text-uppercase " id="product-description"><a class="text-white" href="mailto:abcdefg@gmail.com">dinh.nhat2501@gmail.com</a> </p>
               </div>
             </div>
             <div class="contact-item media"> <i class="fa fa-clock media-left media-right-margin"></i>
               <div class="media-body">
-                <p class="text-uppercase">Time</p>
-                <p class="text-uppercase">24/7</p>
+                <p class="text-uppercase" >Time</p>
+                <p class="text-uppercase" id="avail-station">24/7</p> 
               </div>
             </div>
         </div>
@@ -128,13 +128,19 @@
               </div>
             </div>
           </div>
-          <ul class="progressbar">
-            <li class="complete">Step 1</li>
-            <li class="complete">Step 2</li>
-            <li class="complete">Step 3</li>
-            <li class="active">Step 4</li>
-            <li >Step 5</li>
+          <ul class="progressbar" id="order-status" style="display: none;">
+            <li >Pending</li>
+            <li >Processing</li>
+            <li >Shipping</li>
+            <li>Deliverred</li>
+            <li>Finish</li>
           </ul>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
       </div>
     </div>
   </div>
